@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: opencloudcx-new_app
+  name: opencloudcx-new-app
 spec:
   containers:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:latest
     args:
     - "--context=git://https://github.com/washarmy/hackathon"
-    - "--destination=rivahackathon/team-07-opencloudcx-new_app:latest"
+    - "--destination=rivahackathon/team-07-opencloudcx-new-app:latest"
     volumeMounts:
     - name: kaniko-secret
       mountPath: /kaniko/.docker
