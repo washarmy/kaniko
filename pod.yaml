@@ -8,7 +8,7 @@ spec:
     image: gcr.io/kaniko-project/executor:latest
     args:
     - "--context=git://https://github.com/washarmy/hackathon"
-    - "--destination=rivahackathon/team-07-opencloudcx-app:latest"
+    - "--destination=rivahackathon/team-07-opencloudcx-new_app:latest"
     volumeMounts:
     - name: kaniko-secret
       mountPath: /kaniko/.docker
