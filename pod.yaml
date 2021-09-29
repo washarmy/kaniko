@@ -7,7 +7,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:latest
     args:
-    - "--context=git://github.com/RIVA-Hackathon/team-07-app-repo"
+    - "--context=git://https://github.com/washarmy/hackathon"
     - "--destination=rivahackathon/team-07-opencloudcx-app:latest"
     volumeMounts:
     - name: kaniko-secret
